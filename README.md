@@ -1,4 +1,4 @@
-![image](https://github.com/bharatxnj/IAC/assets/46646250/36282d05-5945-4047-b6ba-79a11d1e91bf)**Context**
+**Context**
 
 
 ![image](https://github.com/bharatxnj/IAC/assets/46646250/158d905e-424a-4008-ad4c-e4149924b3d5)
