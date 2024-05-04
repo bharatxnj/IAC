@@ -1,3 +1,51 @@
+![image](https://github.com/bharatxnj/IAC/assets/46646250/36282d05-5945-4047-b6ba-79a11d1e91bf)**Context**
+
+
+![image](https://github.com/bharatxnj/IAC/assets/46646250/158d905e-424a-4008-ad4c-e4149924b3d5)
+
+
+
+**Structure**
+
+![image](https://github.com/bharatxnj/IAC/assets/46646250/32329fd8-07df-41c6-b82e-78fc1fb2515b)
+
+
+**#Prerequisites
+**
+Install Git, AWS CLI Version 2, Terraform (v 0.13.2), Terragrunt (v 0.23.40) and few other necessary packages (curl, vim, and unzip)
+
+
+#! /bin/bash
+echo "###################################"
+echo "Installing curl, git, vim and unzip"
+echo "###################################"
+apt-get update
+apt-get install curl git vim unzip awscli -y
+echo "############################################"
+echo "Installing AWS CLI, Terraform and Terragrunt"
+echo "############################################"
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+./aws/install
+curl -L -o terraform.zip https://releases.hashicorp.com/terraform/0.13.6/terraform_0.13.6_linux_386.zip && unzip -o terraform.zip -d /usr/local/bin/
+curl -L -o /usr/local/bin/terragrunt https://github.com/gruntwork-io/terragrunt/releases/download/v0.28.12/terragrunt_linux_386 && chmod u+x /usr/local/bin/terragrunt
+
+
+**Run the below commands to confirm the installation once the above script completes.
+**
+git --version
+aws --version
+terraform -v
+terragrunt -v
+
+**To execute Terraform modules
+**
+git clone git@repo
+
+=========================================END======================================================================================
+
+Addition step
+
 # Infrastructure deployment by terraform for AWS Cloud.
 
 ## Getting started
